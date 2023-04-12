@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/linear12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+        <ImageView
+            android:id="@+id/imageBackGround"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/images__10_"
+            android:contentDescription="canvas Image" />
+        <com.example.drawingapp.DrawingView
+            android:id="@+id/drawingView"
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FFFFFF"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linear12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/frame_layout">
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_color"
+            android:layout_marginEnd="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+              android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linear12"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/brushImage"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/images__9_"
+            android:scaleType="centerCrop"
+            android:contentDescription="ImageBtn"
+           />
+
+        <ImageButton
+            android:id="@+id/permissionDialog"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/download__4_"
+            android:contentDescription="imageButton"
+             />
+        <ImageButton
+            android:id="@+id/open_Gallery"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/galary_image"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            />
+        <ImageButton
+            android:id="@+id/undo_BTn"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/download__11_"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            />
+        <ImageButton
+            android:id="@+id/file_save"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/download__12_"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            />
+        <ImageButton
+            android:id="@+id/shareImage"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/images__2_"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

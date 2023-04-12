@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Drawing App</string>
+    <string name="choose_color">Choose Color</string>
+    <string name="allow_drawingapp_to_access_the_device_s_location">Allow DrawingApp to access the device\'s Location</string>
+    <string name="allow_drawingApp_to_access_the_device_s_location">hello</string>
+    <string name="allow_drawingapp_to_access_the_device_location">Allow DrawingApp to access the device location</string>
+    <string name="precise">precise</string>
+    <string name="image">image</string>
+    <string name="please_wait">Please Wait..</string>
+</resources>
